@@ -1,0 +1,6 @@
+https://stackoverflow.com/questions/72172191/typescript-n-is-replaced-with-0a
+https://www.typescriptlang.org/play/
+https://github.com/microsoft/TypeScript/issues/30539
+https://www.typescriptlang.org/play/?ts=3.8.0-beta&e=64
+https://github.com/microsoft/TypeScript/issues/28936
+https://www.reddit.com/r/typescript/comments/9462ru/why_does_this_interface_use_an_equal_sign_in/

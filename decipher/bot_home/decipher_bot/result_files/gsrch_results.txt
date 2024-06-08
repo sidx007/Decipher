@@ -1,0 +1,10 @@
+https://stackoverflow.com/questions/72172191/typescript-n-is-replaced-with-0a
+https://www.typescriptlang.org/play/
+https://github.com/microsoft/TypeScript/issues/30539
+https://www.typescriptlang.org/play/?ts=3.8.0-beta&e=64
+https://github.com/microsoft/TypeScript/issues/28936
+https://www.reddit.com/r/typescript/comments/9462ru/why_does_this_interface_use_an_equal_sign_in/
+https://www.typescriptlang.org/play/?ts=3.7.0-pr-33294-11
+https://www.reddit.com/r/typescript/comments/8vcqfi/get_enum_value_from_type_only/
+https://dreamingincrm.com/2015/10/25/using-typescript-and-gulp-for-crm-client-side-scripting/
+https://youtrack.jetbrains.com/issue/WEB-38762

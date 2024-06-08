@@ -1,0 +1,96 @@
+{% load static %}
+{% load socialaccount %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN PAGE</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'bot_home/hi.css' %}">
+    <link rel=”stylesheet” href=”https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css” />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+   
+</head>
+<body>
+   
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <div style="display: flex;">
+          <div class="logo">
+            <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
+              <path d="M12 2l10 6.5v7L12 22 2 15.5v-7L12 2zM12 22v-6.5" />
+              <path d="M22 8.5l-10 7-10-7" />
+              <path d="M2 15.5l10-7 10 7M12 2v6.5"/></svg>
+            </div>
+            <a class="navbar-brand" style="font-weight: bold;" href="#">Decipher</a>
+
+            </div>
+        </div>
+      </nav>
+      <div class="container content-container" style="background-color: whitesmoke; width: 100%;max-width: 100%; height:auto">
+        <div style="width: 100%;display: flex;flex-direction: row;">
+          <div class="card" style="width: 45%;margin-left: 2%; border: 0px; padding-top: 0%; top: 20vh; left: 0vh; padding-left: 10vh; background-color: transparent;">
+           <div class="About">
+            <h1 style="font-weight: bolder;">About</h1>
+           </div>
+            <h6 style="position: relative; padding-top: 2vh; color: #828282;"> Your intelligent learning companion</h6>
+          <div class="content" style="font-weight: bold;">
+            Decipher is an innovative AI-powered learning platform designed to revolutionize education and personal development. By aggregating diverse learning resources from YouTube, articles, and more, Decipher offers a centralized hub for efficient and personalized learning. Through interactive questioning, and timely reminders, Decipher enhances engagement and accessibility. Its dedicated chat platform and Notion integration ensure users can easily manage and track their learning progress. With a commitment to efficiency, personalization, and engagement, Decipher empowers users to achieve their learning goals effectively in today's fast-paced digital landscape.   
+  
+          </div>
+        </div>
+        <div style="width: 22%; "></div>
+          
+            <div class="loginBox" style="width: 30%;"> <img class="user" src="https://i.ibb.co/yVGxFPR/2.png" height="100px" width="100px">
+              <h3>Sign in here</h3>
+              <form action="{% provider_login_url 'google' %}" method="post">
+                {% csrf_token %}
+                  <button class="btn btn-lg btn-google btn-block text-uppercase btn-outline" type="submit" style=" box-shadow: 0 1px 2px 1px #ddd; background-color: whitesmoke;"><img src="https://img.icons8.com/color/16/000000/google-logo.png"> Signup Using Google</button>
+              </form> 
+              <div class="text-center">
+                  
+              </div>
+              
+          </div>
+          
+      </div>
+      
+     
+
+      </div>
+      <div style="background-color: whitesmoke;">
+        <div class="footer-basic" style="background-color: whitesmoke;">
+          <footer style="border-top: whitesmoke 4px solid; top: 5vh; position: relative;">
+              <div class="social" style="padding-top: 2vh;">
+                <a href="#"><i class="bi-instagram"></i></a>
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                  <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                </svg></a>
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                  <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                </svg></i></a>
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                </svg></i></a>
+              </div>
+              
+              <p class="copyright">Decipher © 2024</p>
+          </footer>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+      
+      </div>
+      
+     
+      
+</body>
+</html>
