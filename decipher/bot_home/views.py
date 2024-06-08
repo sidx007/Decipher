@@ -66,12 +66,8 @@ def chatbot_view(request):
         print(prompt)
         if prompt:
             print(integeration_token)
-            decipher.CreateNotionPage(notion_page_title, integeration_token, prompt)
-            context ={
-                'prompt':prompt,
-                'success': True
-            }
-            return render(request, "bot_home/chatbot.html", context)
+            context = decipher.CreateNotionPage(notion_page_title, integeration_token, prompt)
+            return render(request, "bot_home/pages.html", context)
         return redirect("bot_home:chatbot_view")
     return render(request, "bot_home/chatbot.html")
 

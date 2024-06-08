@@ -1,6 +1,6 @@
-https://docs.docker.com/reference/cli/docker/container/run/
-https://hub.docker.com/
-https://docs.docker.com/reference/cli/docker/container/create/
-https://docs.docker.com/reference/cli/docker/container/ls/
-https://docs.ansible.com/ansible/latest/collections/community/docker/docker_container_module.html
-https://www.docker.com/products/docker-hub/
+https://www.investopedia.com/terms/b/blockchain.asp
+https://www.researchgate.net/publication/341254169_The_Revolution_of_Blockchain_State-of-the-Art_and_Research_Challenges
+https://blockchain.gov.in/Home/BlockChain?blockchain=blockchain
+https://www.researchgate.net/publication/338358883_Blockchain_and_Industry_40_Overview_Convergence_and_Analysis
+https://blockchain.gov.in/Home/BlockChain?blockchain=type
+https://www.sciencedirect.com/science/article/am/pii/S0020019020300636

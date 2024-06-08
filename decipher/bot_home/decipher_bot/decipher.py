@@ -3,7 +3,7 @@ from . import youtubesrch as ytsearch
 from . import ConfigureSettings as _conf
 from . import creating_notion_page_revised as cnp
 import os, re
-
+from . import result
 if not os.path.exists('bot_home/decipher_bot/result_files'):
     os.makedirs('bot_home/decipher_bot/result_files')
 
@@ -24,7 +24,7 @@ def GetKeywords(chat_session):
     return keywords
 
 def WriteAndFilterLinks(topic):
-    gsearch.filter_links(topic)
+     return gsearch.filter_links(topic)
 
 def GetYoutubeLinks(topic):
     ytsearch.searchQuery(topic, 5)
@@ -72,8 +72,6 @@ def GetIntroduction(topic, chat_session):
     file2 = open(PATH+"intro_title.txt", 'w+')
     file2.write(intro_title)
     file2.close()
-
-
     return introduction
 
 def queryGemini(query, chat_session):
@@ -84,6 +82,9 @@ def queryGemini(query, chat_session):
     return "No response"
 
 def CreateNotionPage(parent_page_title, token, prompt):
+
+    context = {}
+
     print("Configuring Notion...")
     # cnotion.configureNotion(parent_page_title, token)
     cnp.configureNotion(parent_page_title, token)
@@ -127,3 +128,5 @@ def CreateNotionPage(parent_page_title, token, prompt):
 
     intro_title_file.close()
     intro_file.close()
+    context = result.extract()
+    return context
