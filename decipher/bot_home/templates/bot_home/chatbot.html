@@ -66,11 +66,7 @@
       </div>
 
       <div class="chat-area">
-        {%if success%}
-        <div class="alert alert-success alert-dismissible" role="alert">
-          successfully added to your notion account
-        </div>
-        {%endif%}
+        
         <div class="chat-area-header">
           <div class="chat-area-title">Decipher</div>
         </div>
@@ -107,7 +103,11 @@
         </div>
 
         <div class="main-chat" id="msgs">
-
+          {%if success%}
+        <div class="chat-msg" role="alert">
+          successfully added to your notion account<button onclick="redirectToLink()"  type="submit" url class="btn btn-primary">Click here for resources</button>
+        </div>
+        {%endif%}
         </div>
 
         <!-- <div class="chat-area-footer">
@@ -171,7 +171,11 @@
   </div>
 
   <script src="{% static 'bot_home/script.js' %}"></script>
-
+  <script>
+    function redirectToLink() {
+        window.location.href = 'http://127.0.0.1:8000/dashboard/resources'; // Replace with your desired URL
+    }
+</script>
 </body>
 
 </html>

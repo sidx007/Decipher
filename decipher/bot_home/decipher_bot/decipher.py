@@ -1,7 +1,6 @@
 from . import googlesrch as gsearch
 from . import youtubesrch as ytsearch
 from . import ConfigureSettings as _conf
-from . import create_notion as cnotion
 from . import creating_notion_page_revised as cnp
 import os, re
 

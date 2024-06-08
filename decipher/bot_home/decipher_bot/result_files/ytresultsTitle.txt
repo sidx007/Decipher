@@ -1,5 +1,5 @@
-Big projects are ditching TypeScript… why?
-TypeScript in 100 Seconds
-TypeScript Tutorial for Beginners
-Learn TypeScript – Full Tutorial
-TypeScript - The Basics
+What is Docker?
+100+ Docker Concepts you Need to Know
+Docker Tutorial for Beginners [FULL COURSE in 3 Hours]
+Docker vs VM:  What's the Difference, and Why You Care!
+you need to learn Docker RIGHT NOW!! // Docker Containers 101
